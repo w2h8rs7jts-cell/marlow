@@ -21,7 +21,7 @@
 <tr><td>Voice clips</td><td>Recorded during a tutoring session</td><td>To send a spoken message to the other person in the session</td></tr>
 <tr><td>Book titles and ISBNs</td><td>Typed or scanned by the user</td><td>To find books, covers and reading material</td></tr>
 <tr><td>Help requests: a short note and the library it was sent to</td><td>A child or parent</td><td>To connect the child with a library tutor</td></tr>
-<tr><td>Misconduct reports: a description, category, severity and an optional screenshot</td><td>The parent or child who files the report</td><td>To review the conduct of tutors and keep children safe</td></tr>
+<tr><td>Misconduct reports: a description, category and severity</td><td>The parent or child who files the report</td><td>To review the conduct of tutors and keep children safe</td></tr>
 <tr><td>Subscription status, product, renewal date and App Store transaction ID</td><td>Apple</td><td>To unlock paid features. We never receive card numbers.</td></tr>
 </tbody></table></div>
 <p>The app's code includes no advertising tools, no third-party analytics and no tracking across other companies' apps or websites. We do not collect precise location, contacts or an advertising identifier.</p>
@@ -40,7 +40,7 @@
 <h2>Who receives information</h2>
 <div class="tablewrap"><table>
 <thead><tr><th>Recipient</th><th>What it receives</th><th>Purpose</th></tr></thead><tbody>
-<tr><td>Supabase</td><td>All app data listed above, including homework photos, voice clips and report screenshots, which are kept in private storage</td><td>Hosts the database, sign-in, file storage and our server functions</td></tr>
+<tr><td>Supabase</td><td>All app data listed above, including homework photos and voice clips, which are kept in private storage</td><td>Hosts the database, sign-in, file storage and our server functions</td></tr>
 <tr><td>Anthropic (Claude AI)</td><td>Homework photos and text, the child's questions and answers during a lesson, and the text of misconduct reports</td><td>Writes explanations, builds quizzes and triages report severity</td></tr>
 <tr><td>OpenAI</td><td>Only the text the app reads aloud, such as quiz questions, spelling words and passages. No names or account details.</td><td>Creates natural-sounding read-aloud audio</td></tr>
 <tr><td>Apple</td><td>Subscription purchases through the App Store; speech from the microphone when Read Aloud uses speech recognition</td><td>Payments, and converting speech to text on the device or Apple's servers</td></tr>
@@ -64,7 +64,7 @@
 <p>Tutors are adults with their own accounts. A tutor can work with a child only after a parent approves the connection, or when a tutor from a partner library accepts a help request that the child or parent sent to that library. Tutor profiles, including credentials, are written by the tutor. Marlow does not verify them, and parents see them before approving a connection.</p>
 <p>A parent or child can report a tutor's conduct. The report's text goes to an AI model that sorts it by category and severity. The AI does not suspend anyone: reports it rates high-severity are flagged for review by a person, who decides what happens next. If the AI is unavailable, the report is still saved and marked for human review. Library administrators can see reports about tutors in their own library.</p>
 <p>During a live session, a child sees a <strong>Tell a grown-up</strong> button. Tapping it sends a message, with a snapshot of the shared whiteboard, to the child's approved parents so they can check in. We recommend that a parent stay nearby during live help.</p>
-<p><strong>Safety reports after an account is deleted.</strong> To protect other children, we keep safety and misconduct reports after the reporter's, the tutor's or the child's account is deleted. When that happens the report is anonymized: names and links to the deleted account are removed, and any screenshot attached to it is deleted. What remains is the category, severity, date, status, the library involved (if any) and the written description, which may be kept for safety review. Because the description is free text, please avoid putting names in it.</p>
+<p><strong>Safety reports after an account is deleted.</strong> To protect other children, we keep safety and misconduct reports after the reporter's, the tutor's or the child's account is deleted. When that happens the report is anonymized: names and links to the deleted account are removed. What remains is the category, severity, date, status, the library involved (if any) and the written description, which may be kept for safety review. Because the description is free text, please avoid putting names in it.</p>
 <p><strong>Child sign-in protection.</strong> New child PINs are 6 digits, randomly generated, and weak PINs such as 123456 are not allowed. Repeated wrong PIN attempts temporarily lock that child's sign-in, and a parent can reset the PIN from the child's page. PINs created earlier with 4 digits keep working until a parent resets them.</p>
 <p>Voice clips and whiteboard drawings in a session are visible to the people in that session.</p>
 
